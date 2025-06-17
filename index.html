@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV / Portfolio de Odin</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #965858;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #965858;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2, h3 {
+            color: #965858;
+            border-bottom: 2px solid #b99393;
+            padding-bottom: 5px;
+        }
+
+        p, ul {
+            margin-left: 20px;
+        }
+
+        ul {
+            padding: 10px;
+            background-color: #f0eaea;
+            border-radius: 10px;
+            border-left: 4px solid #965858;
+            list-style-type: none;
+        }
+
+        li {
+            background-color: #d9bcbc;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            color: black;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #965858;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer h2 {
+            margin: 0 0 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form input, form textarea, form button {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        form button {
+            background-color: #b99393;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#presentation">Présentation</a>
+        <a href="#cv">CV</a>
+        <a href="#passions">Passions</a>
+        <a href="#experience">Expérience</a>
+        <a href="#competences">Compétences</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <h1>CV / Portfolio de Odin</h1>
+    </header>
+
+    <div class="container">
+        <section id="presentation" class="presentation">
+            <h2>Présentation</h2>
+            <p>Je m'appelle Odin Colodro, j'ai 17 ans et je suis actuellement en BTS CIEL...</p>
+        </section>
+
+        <section id="cv">
+            <h2>CV</h2>
+            <ul>
+                <li><strong>Nom:</strong> COLODRO Odin</li>
+                <li><strong>Classe:</strong> BTS CIEL 1</li>
+                <li><strong>Entreprise d'alternance:</strong> IPC Petroleum France</li>
+            </ul>
+        </section>
+
+        <section id="passions">
+            <h2>Passions</h2>
+            <ul>
+                <li>Tennis</li>
+                <li>Moto</li>
+                <li>Jeux vidéos</li>
+                <li>Plongée en bouteille</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Expérience</h2>
+            <ul>
+                <li>Stage chez IPC Petroleum du 20 janvier au 23 février 2024.</li>
+                <li>Stage chez Cash Converters du 20 septembre au 20 octobre 2023.</li>
+                <li>Stage chez Delisle SAS du 28 novembre au 16 décembre 2022.</li>
+            </ul>
+        </section>
+
+        <section id="competences">
+            <h2>Compétences</h2>
+            <ul>
+                <li>Préparations et montage de PC.</li>
+                <li>Préparations de switch, firewall, routeur.</li>
+                <li>Installation OS/ pilotes.</li>
+                <li>Utilisation de Linux, Windows, Mac OS</li>
+            </ul>
+        </section>
+
+        <section id="galerie">
+            <h2>Galerie d'Images</h2>
+            <div class="gallery">
+                <img src="https://picsum.photos/200" alt="Image 1">
+                <img src="https://picsum.photos/201" alt="Image 2">
+                <img src="https://picsum.photos/202" alt="Image 3">
+                <img src="https://picsum.photos/203" alt="Image 4">
+                <img src="https://picsum.photos/204" alt="Image 5">
+                <img src="https://picsum.photos/205" alt="Image 6">
+                <img src="https://picsum.photos/206" alt="Image 7">
+                <img src="https://picsum.photos/207" alt="Image 8">
+            </div>
+        </section>
+    </div>
+
+    <footer id="contact">
+        <h2>Contactez-moi</h2>
+        <form>
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </footer>
+</body>
+</html>
